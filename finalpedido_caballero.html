@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Pide tu pizza!</title>
+    <style>
+    	* {
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Aptos Display;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+		.header{
+			padding: 30px; 
+			text-align: center; 
+			background: #ff9e00;
+			border: 3px solid black;
+		}
+		.header h1 { 
+		font-size: 60px;
+	}
+
+	.topnav {
+		overflow: hidden; 
+		background-color: #910503;
+		border: 3px solid black;
+	}
+
+	.topnav a {
+		float: left;
+		display: block; 
+		color: #f2f2f2; 
+		text-align: center;
+		padding: 14px 16px; 
+		text-decoration: none;
+	}
+
+	.topnav a:hover {
+		background-color: #c0392b; 
+		color: white;
+	}
+	label{
+		font-family: Arial;
+		display: block;
+		margin-bottom: 5px;
+	}
+	.leftcolumn {
+		float: left; 
+		width: 75%;
+	}
+
+	.rightcolumn {
+		float: left; 
+		width: 25%;
+		background-color: #f1f1f1; 
+		padding-left: 20px;
+	}
+ 
+	.fakeimg {
+		width: 100%; 
+		padding: 20px;
+	}
+ 
+	.card {
+		background-color: white;
+		border: 3px solid black;
+		padding: 20px; 
+		margin-top: 20px;
+	}
+	.card1 {
+		background-color: white;
+		margin-top: 20px;
+		border: 3px solid black;
+	}
+
+	.row::after{
+		content: ""; 
+		display: table; 
+		clear: both;
+	}
+
+	.footer{
+		color: white;
+		padding: 20px; 
+		text-align: center; 
+		background: #ff9e00; 
+		margin-top: 20px;
+		border: 3px solid black;
+		font-family: Times New Roman;
+		text-align: center;
+	}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.topnav a {
+		float: none; 
+		width: 100%;
+	}
+}
+	p{
+		font-family: Times New Roman;
+		text-align: center;
+	}
+	.submit-button {
+            background-color: #ff9e00;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    input, textarea{
+    	width: 100%;
+		padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #direccion-domicilio {
+            display: none;
+        }
+         input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center; /* Alinea los elementos verticalmente */
+        }
+        h1.a{
+        	text-align: center;
+        	font-family: serif;
+        }
+
+    </style>
+    </head>
+<body>
+    <div class="header">
+		<h1>Pedidos</h1>
+		<p>¿Buscas tu pizza perdida más económica? Aprovecha nuestras promociones</p>
+	</div>
+	<div class="topnav">
+		<a href="menupizza_caballero.html">Menú</a> 
+		<a href="promociones_caballero.html">Promociones</a> 
+		<a href="pedidos_caballero.html">Pedidos</a>
+		<a href="pizza_caballero.html" style="float:right">Inicio</a>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+        		<h1 class="a">¡Gracias por tu pedido, te notificaremos cuando esté listo!</h1>
+        		<div class="fakeimg" style="height:726px;">
+        			<img src="img/final.jpg" alt="pizza" height="700px" width="840px">
+        		</div>
+		</div>
+	</div>
+	<div class="rightcolumn">
+			<div class="card">
+				<h2>Sabías qué...?</h2>
+				<div class="fakeimg" style="height: 100px;"><img src="img/personacomiendo.png" alt="pizza" height="80px" width="200px"></div> 
+				<p>¡México es el segundo país en el mundo que más pizza consume!</p> 
+			</div> 
+			<div class="card1">
+				<div class="fakeimg">
+					<a href="https://www.netflix.com/mx/"></a>
+					<img src="img/netflix.jpg" alt="netflix" height="300px" width="250px">
+				</div>
+			</div>
+		
+			<div class="card">
+				<h3>Siguenos en nuestras redes sociales</h3>
+				<p><strong>Faceboook:</strong> La Rebanada Perdida<br><strong>Instagram:</strong> @larebanadaperdida</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer"> 
+		<h3>Sitio web</h3>
+		<h4>Proyecto Final para la clase de Desarrollo Web</h4>
+	</div>
+</html>

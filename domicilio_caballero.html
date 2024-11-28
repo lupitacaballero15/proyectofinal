@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Pide tu pizza!</title>
+    <style>
+    	* {
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Aptos Display;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+		.header{
+			padding: 30px; 
+			text-align: center; 
+			background: #ff9e00;
+			border: 3px solid black;
+		}
+		.header h1 { 
+		font-size: 60px;
+	}
+
+	.topnav {
+		overflow: hidden; 
+		background-color: #910503;
+		border: 3px solid black;
+	}
+
+	.topnav a {
+		float: left;
+		display: block; 
+		color: #f2f2f2; 
+		text-align: center;
+		padding: 14px 16px; 
+		text-decoration: none;
+	}
+
+	.topnav a:hover {
+		background-color: #c0392b; 
+		color: white;
+	}
+	label{
+		font-family: Arial;
+		display: block;
+		margin-bottom: 5px;
+	}
+	.leftcolumn {
+		float: left; 
+		width: 75%;
+	}
+
+	.rightcolumn {
+		float: left; 
+		width: 25%;
+		background-color: #f1f1f1; 
+		padding-left: 20px;
+	}
+ 
+	.fakeimg {
+		width: 100%; 
+		padding: 20px;
+	}
+ 
+	.card {
+		background-color: white;
+		border: 3px solid black;
+		padding: 20px; 
+		margin-top: 20px;
+	}
+	.card1 {
+		background-color: white;
+		margin-top: 20px;
+		border: 3px solid black;
+	}
+
+	.row::after{
+		content: ""; 
+		display: table; 
+		clear: both;
+	}
+
+	.footer{
+		color: white;
+		padding: 20px; 
+		text-align: center; 
+		background: #ff9e00; 
+		margin-top: 20px;
+		border: 3px solid black;
+		font-family: Times New Roman;
+		text-align: center;
+	}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.topnav a {
+		float: none; 
+		width: 100%;
+	}
+}
+	p{
+		font-family: Times New Roman;
+		text-align: center;
+	}
+	.submit-button {
+            background-color: #ff9e00;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    input, textarea{
+    	width: 100%;
+		padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid #000000;
+        border-radius: 5px;
+    }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px solid #000000;
+            border-radius: 5px;
+            background-color: #f8c471;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        #direccion-domicilio {
+            display: none;
+        }
+         input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center; /* Alinea los elementos verticalmente */
+        }
+        .button {
+            background-color: #ff9e00;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    </head>
+<body>
+    <div class="header">
+		<h1>Pedidos</h1>
+		<p>¿Buscas tu pizza perdida más económica? Aprovecha nuestras promociones</p>
+	</div>
+	<div class="topnav">
+		<a href="menupizza_caballero.html">Menú</a> 
+		<a href="promociones_caballero.html">Promociones</a> 
+		<a href="pedidos_caballero.html">Pedidos</a>
+		<a href="pizza_caballero.html" style="float:right">Inicio</a>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+        <form action="#" method="post">
+            <h2>Datos del cliente</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" required></textarea>
+
+        <div id="direccion-domicilio">
+            <h2>Dirección de entrega</h2>
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle">
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero">
+            <label for="colonia">Colonia:</label> 
+
+            <input type="text" id="colonia" name="colonia">
+        </div>
+
+            <h2>Selecciona tu pizza</h2>
+            <label for="tamaño">Paquete:</label>
+            <select name="tamaño" id="tamaño">
+            	<option value="----">---</option>
+                <option value="pequeña">Pizza grande</option>
+                <option value="mediana">Combo estudihambres</option>
+                <option value="grande">Combo Familiar</option>
+            </select>
+
+            <label for="tamaño">Tamaño:</label>
+            <select name="tamaño" id="tamaño">
+            	<option value="----">---</option>
+                <option value="pequeña">Pequeña</option>
+                <option value="mediana">Mediana</option>
+                <option value="grande">Grande</option>
+            </select>
+
+            <label for="masa">Masa:</label>
+            <select name="masa" id="masa">
+            	<option value="----">---</option>
+                <option value="tradicional">Tradicional</option>
+                <option value="fina">Fina</option>
+                <option value="gruesa">Gruesa</option>
+            </select>
+
+            <label for="ingredientes">Ingredientes:</label>
+            <div>
+                <input type="checkbox" name="ingrediente" value="queso"> Queso extra
+                <input type="checkbox" name="ingrediente" value="pepperoni"> Pepperoni
+                <input type="checkbox" name="ingrediente" value="cebolla"> Cebolla
+            </div>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+
+            <p><a href="finalpedido_caballero.html" class="button">¡Realizar pedido!</a></p>
+        </form>
+    	</div>
+	</div>
+	<div class="rightcolumn">
+			<div class="card">
+				<h2>Sabías qué...?</h2>
+				<div class="fakeimg" style="height: 100px;"><img src="img/personacomiendo.png" alt="pizza" height="80px" width="200px"></div> 
+				<p>¡México es el segundo país en el mundo que más pizza consume!</p> 
+			</div> 
+
+			<div class="card1">
+				<div class="fakeimg">
+					<a href="https://www.netflix.com/mx/">
+					<img src="img/netflix.jpg" alt="netflix" height="450px" width="250px"></a>
+
+				</div>
+			</div>
+		
+			<div class="card">
+				<h3>Siguenos en nuestras redes sociales</h3>
+				<p><strong>Faceboook:</strong> La Rebanada Perdida<br><strong>Instagram:</strong> @larebanadaperdida</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer"> 
+		<h3>Sitio web</h3>
+		<h4>Proyecto Final para la clase de Desarrollo Web</h4>
+	</div>
+</html>

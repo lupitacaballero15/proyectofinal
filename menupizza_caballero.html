@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pizzería "La Rebanada Perdida"</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Aptos Display;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+		.header{
+			padding: 30px; 
+			text-align: center; 
+			background: #ff9e00;
+			border: 3px solid black;
+		}
+		.header h1 { 
+		font-size: 60px;
+	}
+
+	.topnav {
+		overflow: hidden; 
+		background-color: #910503;
+		border: 3px solid black;
+	}
+
+	.topnav a {
+		float: left;
+		display: block; 
+		color: #f2f2f2; 
+		text-align: center;
+		padding: 14px 16px; 
+		text-decoration: none;
+	}
+
+	.topnav a:hover {
+		background-color: #c0392b; 
+		color: white;
+	}
+
+	.leftcolumn {
+		float: left; 
+		width: 75%;
+	}
+
+	.rightcolumn {
+		float: left; 
+		width: 25%;
+		background-color: #f1f1f1; 
+		padding-left: 20px;
+	}
+ 
+	.fakeimg {
+		width: 100%; 
+		padding: 20px;
+	}
+	.fakeimg1 {
+		width: 100%;
+		padding-left: 10px;
+	}
+	.card {
+		background-color: white;
+		border: 3px solid black;
+		padding: 20px; 
+		margin-top: 20px;
+	}
+	.card1 {
+		background-color: white;
+		margin-top: 20px;
+		border: 3px solid black;
+	}
+	.card1:hover{
+		/*Hacer que salga el link y mande a mercado libre*/
+	}
+	.card2 {
+		background-color: white;
+		border: 3px solid black;
+		padding: 2px; 
+		margin-top: 20px;
+		padding-left: 30px;
+	}
+
+	.row::after{
+		content: ""; 
+		display: table; 
+		clear: both;
+	}
+
+	.footer{
+		color: white;
+		padding: 20px; 
+		text-align: center; 
+		background: #ff9e00; 
+		margin-top: 20px;
+		border: 3px solid black;
+		font-family: Times New Roman;
+		text-align: center;
+	}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.topnav a {
+		float: none; 
+		width: 100%;
+	}
+}
+	p{
+		font-family: Times New Roman;
+		text-align: center;
+	}
+	.button {
+            background-color: #ff9e00;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Menú</h1>
+		<p>¡Busca tu pizza perdida en nuestra sucursal!</p>
+	</div>
+	<div class="topnav">
+		<a href="menupizza_caballero.html">Menú</a> 
+		<a href="promociones_caballero.html">Promociones</a> 
+		<a href="pedidos_caballero.html">Pedidos</a>
+		<a href="pizza_caballero.html" style="float:right">Inicio</a>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<div class="fakeimg" style="height:730px;">
+					<a href="pedidos_caballero">
+					<img src="img/menu.jpg" alt="pizza" height="700px" width="840px"></a>
+				</div>
+					<p><a href="pagina_de_pedidos.html" class="button">¡Quiero pedir!</a></p>
+				</div> 
+		</div>
+		<div class="rightcolumn">
+			<div class="card2">
+				<div class="fakeimg1">
+					<a href="pedidos_caballero">
+					<img src="img/helado.jpg" alt="helado" height="260px" width="200px"></a>
+				</div>
+			</div> 
+
+			<div class="card2">
+				<div class="fakeimg1">
+					<a href="pedidos_caballero"></a>
+					<img src="img/bebidas.jpg" alt="bebidas" height="260px" width="200px"></a>
+				</div>
+			</div>
+			<div class="card2">
+				<div class="fakeimg1">
+					<a href="pedidos_caballero">
+					<img src="img/extras.jpg" alt="extras" height="255px" width="200px"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"> 
+		<h3>Sitio web</h3>
+		<h4>Proyecto Final para la clase de Desarrollo Web</h4>
+	</div>
+</body>
+</html>

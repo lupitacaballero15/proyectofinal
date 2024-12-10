@@ -110,7 +110,7 @@
 	<div class="row">
 		<div class="leftcolumn">
 			<div class="card">
-				<div class="fakeimg" style="height:726px;"><img src="pizza1.jpg" alt="pizza" width="100%"></div>
+				<div class="fakeimg" style="height:726px;"><img src="pizza1.jpg" alt="pizza" height="100%" width="100%"></div>
 					<p>¡Haz tu pedido con nosotros!</p>
 					<p>En tiempo, calidad y excelente sabor... ¡Solo nosotros somos los mejores!</p> 
 				</div> 
